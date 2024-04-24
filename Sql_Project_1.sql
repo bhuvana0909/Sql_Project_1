@@ -1,0 +1,10 @@
+SELECT * FROM cares.car_dekho;
+select count(*) from car_dekho;
+select count(*) from car_dekho where year=2023;
+select count(*) from car_dekho where year=2021 or year=2022 or year=2020;
+select count(*) from car_dekho where fuel= "diesel" and year=2020;
+select count(*) from car_dekho where fuel="Petrol" and year=2020;
+select year, count(*) from car_dekho where fuel = "Petrol" or "Diesel" or "CNG" group by year;
+select year, count(*) from car_dekho group by year having count(*) > 100 ;
+select count(*) from car_dekho where year between 2015 and 2023;
+select * from car_dekho where year between 2015 and 2023;
